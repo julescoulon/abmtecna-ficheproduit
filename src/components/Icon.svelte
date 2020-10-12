@@ -24,11 +24,4 @@
   }
 </script>
 
-<style>
-  .fa {
-    font-size: 1.5rem;
-    margin: auto;
-  }
-</style>
-
 <i class="fa {iconStyle} fa-{icon}" />

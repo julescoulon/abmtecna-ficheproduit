@@ -1,6 +1,14 @@
 {
-    "title": "Bande PRIMA PLY",
-    "description": "Nos bandes PRIMA PLY sont utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères. La qualité des tissus et des gommes de revêtements utilisés confère à nos bandes une excellente résistance aux multiples contraintes auxquelles elles peuvent faire face.",
+    "title": "Bande PLY",
+    "breadcrumb": [
+        "Convoyeurs à bande",
+        "Bandes transporteuses",
+        "Bandes textiles"
+    ],
+    "productPicture": "bandePrimaPLY.png",
+    "provider": "PRIMA",
+    "providerPicture": "prima.png",
+    "description": "Utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères. La qualité des tissus et des gommes de revêtements utilisés confère à nos bandes une excellente résistance aux multiples contraintes auxquelles elles peuvent faire face.",
     "areas": [
         "Carrières",
         "Cimenteries",
