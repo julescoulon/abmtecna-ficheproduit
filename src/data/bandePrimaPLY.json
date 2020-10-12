@@ -1,0 +1,165 @@
+{
+    "title": "Bande PRIMA PLY",
+    "description": "Nos bandes PRIMA PLY sont utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères. La qualité des tissus et des gommes de revêtements utilisés confère à nos bandes une excellente résistance aux multiples contraintes auxquelles elles peuvent faire face.",
+    "areas": [
+        "Carrières",
+        "Cimenteries",
+        "Pôles sidérurgiques",
+        "Pôles chimiques",
+        "Ports",
+        "Silos",
+        "Installations de stockage",
+        "Installations de recyclage"
+    ],
+    "infos": [
+        "Disponible avec ou sans bords protégés.",
+        "Production avec différents degrés d’abrasion « W, X, Y »",
+        "Production avec différents niveaux de température « 120°-150°-200° »"
+    ],
+    "compositions": [
+        "Les bandes PRIMA PLY sont constituées de plis de tissu EP (E : Polyester pour la chaine – P : Polyamide pour la trame), d’une couche de gomme entre les plis (gomme de calandrage) et de couche de gomme technique sur la face supérieur et inférieur gomme de revêtement).",
+        "Les tissus EP sont adaptés pour assurer une excellente résistance à la rupture de la bande dans le sens chaine et une souplesse dans le sens trame garantissant une parfaite mise en auge. Les EP sont imputrescibles. Les carcasses des bandes PRIMA PLY sont constituées de 2 à 6 plis suivant l’utilisation et la résistance visée.",
+        "Les gommes de calandrage entre plis assurent une adhérence parfaite entre les différentes couches.",
+        "Les gommes de revêtements répondent aux différentes normes internationales en vigueur et le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+    ],
+    "stock": [
+        {
+            "head": [
+                "",
+                "500 (4+2)",
+                "500 (6+2)",
+                "650 (4+2)",
+                "650 (6+2)",
+                "800 (4+2)",
+                "800 (6+2)",
+                "1000 (4+2)",
+                "1000 (6+2)",
+                "1000 (8+3)",
+                "1200 (4+2)",
+                "1200 (6+2)",
+                "1200 (8+3)",
+                "1400 (4+2)",
+                "1400 (6+2)",
+                "1400 (8+3)",
+                "1600 (6+2)",
+                "1600 (8+3)"
+            ],
+            "body": [
+                [
+                    "250",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "400",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "630",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "800",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                [
+                    "1000",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            ]
+        }
+    ],
+    "coatingDesc": "Nos bandes PRIMA PLY peuvent être proposées avec différents types de revêtements caoutchouc résistants à l’abrasion, aux gras et huiles, à la température ou au feu.",
+    "coatingList": [
+        [
+            "conveyor-belt",
+            "Anti-abrasif"
+        ],
+        [
+            "oil-can",
+            "Anti-huile"
+        ],
+        [
+            "thermometer-three-quarters",
+            "Anti-chaleur"
+        ],
+        [
+            "fire-alt",
+            "Anti-feu"
+        ]
+    ]
+}
