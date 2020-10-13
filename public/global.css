@@ -4,25 +4,69 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  background-color: var(--black);
 }
 
 :root {
-  --darkblue : #23225b;
-  --lightblue : #0a7ec2;
-  --orange : #f89822;
+  --darkblue : #11175E;
+  --lightblue : #027DC2;
+  --orange : #F7971D;
+  --verylightblue :  #91b0c2;
   --white : #FFFFFF;
-  --black : #202020;
+  --black : #303030;
+  --gray : #C3C3C3;
 
 }
-
-
 
 @media print {
   @page {
     margin: 0cm;
     size: 210mm 297mm;
   }
+}
+
+
+
+h1 {
+  font-size: 2rem;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: .75rem;
+
+}
+
+* + h2 {
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+
+}
+
+p {
+  text-align: justify;
+}
+
+*:not(p) + p, p:first-child {
+  text-indent: 2rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: .5rem;
 }

@@ -1,10 +1,9 @@
 <script>
   export let icon;
-
+  export let style = "Regular";
   //Styles : Solid, Regular, Light, DuoTone, Brands
-  let style = "Light";
-  let iconStyle = "";
 
+  let iconStyle = "";
   switch (style) {
     case "Solid":
       iconStyle = "fas";
@@ -24,4 +23,14 @@
   }
 </script>
 
-<i class="fa {iconStyle} fa-{icon}" />
+<style>
+  i {
+    width: 1rem;
+    height: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<i class="{iconStyle} fa-{icon}" />
