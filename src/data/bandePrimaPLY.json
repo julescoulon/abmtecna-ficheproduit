@@ -26,12 +26,34 @@
     ],
     "infos": [
         "Disponible avec ou sans bords protégés.",
-        "Production avec différents degrés d’abrasion (W, X, Y)",
-        "Production avec différents niveaux de température (120°C, 150°C, 200°C)"
+        "Production avec différents degrés d’abrasion (W,&nbsp;X,&nbsp;Y)",
+        "Production avec différents niveaux de température (120°C,&nbsp;150°C,&nbsp;200°C)"
+    ],
+    "designations": [
+        [
+            "1200",
+            "Largeur de la bande (en mm)"
+        ],
+        [
+            "EP",
+            "Carcasse"
+        ],
+        [
+            "400/3",
+            "Résistance rupture de bande en N/mm <br/> Nombre de plis de tissu"
+        ],
+        [
+            "4+2",
+            "Epaisseur du rêvetement (en mm) porteur <br/> Epaisseur du rêvetement (en mm) envers"
+        ],
+        [
+            "Y",
+            "Qualité du rêvetement"
+        ]
     ],
     "compositions": [
         "Les bandes PLY de PRIMA sont constituées de 2 à 6 plis de tissu EP, d'une couche de gomme de calandrage et d'une couche de gomme de revêtement.",
-        "Les tissus EP (E : Polyester pour la chaîne – P : Polyamide pour la trame) sont imputrescibles et assurent une excellente résistance à la rupture de la bande dans le sens chaîne et une souplesse dans le sens trame garantissant une parfaite mise en auge. La couche de gomme de calandrage se situe entre les plis, elle qui assure une adhérence parfaite entre les différentes couches. Enfin, sur la face supérieure et inférieure, une couche de gomme de revêtement qui répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+        "Sur la face supérieure et inférieure, une couche de gomme de revêtement qui répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
     ],
     "stock": [
         {
@@ -80,22 +102,22 @@
             "body": [
                 [
                     "250",
-                    "",
-                    "",
-                    "X",
-                    "",
+                    "feu",
                     "",
                     "",
                     "",
                     "",
+                    "chaleur, feu",
                     "",
                     "",
                     "",
                     "",
+                    "abrasif, huile, chaleur, feu",
                     "",
                     "",
                     "",
-                    "X",
+                    "abrasif, chaleur, feu",
+                    "",
                     ""
                 ],
                 [
@@ -103,43 +125,50 @@
                     "",
                     "",
                     "",
-                    "X",
+                    "huile, feu",
                     "",
                     "",
                     "",
                     "",
                     "",
+                    "abrasif, huile, chaleur, feu",
                     "",
                     "",
                     "",
                     "",
                     "",
-                    "",
-                    "X",
+                    "feu",
                     ""
                 ],
                 [
                     "630",
                     "",
                     "",
-                    "X",
+                    "huile",
                     "",
                     "",
-                    "X",
+                    "chaleur",
                     "",
                     "",
-                    "X",
+                    "huile",
+                    "",
+                    "abrasif, huile, chaleur, feu",
                     "",
                     "",
                     "",
-                    "",
-                    "",
-                    "X",
+                    "abrasif, huile, chaleur, feu",
                     "",
                     ""
                 ],
                 [
                     "800",
+                    "feu",
+                    "",
+                    "",
+                    "X",
+                    "",
+                    "chaleur, feu",
+                    "",
                     "",
                     "",
                     "",
@@ -147,41 +176,33 @@
                     "",
                     "",
                     "",
-                    "",
-                    "",
-                    "",
-                    "X",
-                    "",
-                    "",
-                    "",
-                    "X",
+                    "abrasif, chaleur, feu",
                     "",
                     ""
                 ],
                 [
                     "1000",
-                    "",
-                    "X",
-                    "",
-                    "X",
+                    "abrasif, huile, chaleur, feu",
                     "",
                     "",
                     "",
+                    "chaleur, feu",
+                    "",
+                    "",
+                    "abrasif, huile, chaleur, feu",
+                    "",
+                    "",
+                    "chaleur, feu",
+                    "",
+                    "feu",
                     "",
                     "",
                     "",
-                    "",
-                    "X",
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
+                    "abrasif, huile, chaleur, feu"
                 ]
             ]
         }
     ],
-    "coatingDesc": "Possibiltié de revêtements caoutchouc aux résistantes suivantes :",
     "coatingList": [
         [
             "conveyor-belt",

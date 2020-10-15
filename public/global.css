@@ -44,19 +44,28 @@ h2, h3 {
 
 h2 {
   font-size: 1.5rem;
-  text-align: center;
   margin-bottom: .75rem;
+}
 
+h2:after {
+  content:'';
+  display:block;
+  background: var(--orange);
+  width:35%;
+  height:2px;
 }
 
 * + h2 {
-  margin-top: 1rem;
+  margin-top: .75rem;
 }
 
 h3 {
-  font-size: 1.25rem;
-  margin-bottom: .5rem;
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
 
+* + h3 {
+  margin-top: .75rem;
 }
 
 p {
@@ -69,4 +78,46 @@ p {
 
 p:not(:last-child) {
   margin-bottom: .5rem;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
+.column-layout {
+  display: grid;
+  grid-gap: 2rem;
+  align-items: stretch;
+}
+
+.column-layout.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.column-layout.two-columns.auto-1fr {
+  grid-template-columns: auto 1fr;
+}
+
+.column-layout.two-columns.ratio1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.column-layout .v-center {
+  align-self: center;
+}
+
+.column-layout .stretch {
+  display: flex;
+  flex-direction: column;
+}
+
+.row:not(:first-child) {
+  margin: 1rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 1.25;
+  font-size: 80%;
 }

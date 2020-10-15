@@ -4,26 +4,23 @@
 </script>
 
 <style>
-  .coatingList {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.5rem;
+  .coatings {
+    margin: 0.5rem 0;
   }
-
+  .coating {
+    margin-left: 1rem;
+  }
   .coating span {
-    margin-left: 0.5rem;
+    margin-left: 0.25rem;
   }
 </style>
 
 <div class="coatings">
-  <h3>Nos revêtements</h3>
-  <div>{data.coatingDesc}</div>
-  <div class="coatingList">
-    {#each data.coatingList as coating}
-      <div class="coating">
-        <Icon icon={coating[0]} />
-        <span>{coating[1]}</span>
-      </div>
-    {/each}
-  </div>
+  <strong>Nos revêtements :</strong>
+  {#each data.coatingList as coating}
+    <span class="coating">
+      <Icon icon={coating[0]} />
+      <span>{coating[1]}</span>
+    </span>
+  {/each}
 </div>
