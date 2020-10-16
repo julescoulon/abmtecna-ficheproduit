@@ -4,23 +4,34 @@
 </script>
 
 <style>
-  .coatings {
-    margin: 0.5rem 0;
+  .coatings div {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
   }
-  .coating {
-    margin-left: 1rem;
-  }
-  .coating span {
-    margin-left: 0.25rem;
+
+  .icon-wrapper {
+    background-color: var(--darkblue);
+    color: var(--white);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
   }
 </style>
 
 <div class="coatings">
-  <strong>Nos revêtements :</strong>
-  {#each data.coatingList as coating}
-    <span class="coating">
-      <Icon icon={coating[0]} />
-      <span>{coating[1]}</span>
-    </span>
-  {/each}
+  <h3>Nos revêtements</h3>
+  <div>
+    {#each data.coatingList as coating}
+      <span class="coating">
+        <span class="icon-wrapper">
+          <Icon icon={coating[0]} />
+        </span>
+        <span>{coating[1]}</span>
+      </span>
+    {/each}
+  </div>
 </div>

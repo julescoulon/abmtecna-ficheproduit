@@ -1,4 +1,6 @@
 <script>
+  import Breadcrumb from "./Breadcrumb.svelte";
+
   import Coating from "./Coating.svelte";
   import Stock from "./Stock.svelte";
   import Icon from "./Icon.svelte";
@@ -16,6 +18,10 @@
     padding: 2rem 4rem;
     padding-bottom: 0;
     flex-grow: 1;
+    background: url("/assets/img/logoABMTECNAwhitebg.png");
+    background-position: center;
+    background-size: auto 75%;
+    background-repeat: no-repeat;
   }
 
   .imgCover {
@@ -64,9 +70,7 @@
       <h3>Domaines d'applications</h3>
       <ul>
         {#each data.areas as area}
-          <li>
-            <span>{area}</span>
-          </li>
+          <li><span>{area}</span></li>
         {/each}
       </ul>
       <div
@@ -106,9 +110,10 @@
         </table>
       </div>
     </div>
+    <Stock {data} />
+  </div>
 
-    <div class="row">
-      <Stock {data} />
-    </div>
+  <div class="row">
+    <Coating {data} />
   </div>
 </main>

@@ -1,7 +1,6 @@
 <script>
   import Icon from "./Icon.svelte";
 
-  import Coating from "./Coating.svelte";
   export let data;
   import { onMount } from "svelte";
 
@@ -54,7 +53,6 @@
 
 <div class="stock">
   <h3>Notre stock disponible</h3>
-  <Coating {data} />
   <table>
     <thead>
       <tr id="arrayToFuse">
@@ -101,5 +99,4 @@
       {/each}
     </tbody>
   </table>
-
 </div>
