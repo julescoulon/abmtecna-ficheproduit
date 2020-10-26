@@ -11,6 +11,8 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--black);
+  color: var(--black);
+
 }
 
 :root {
@@ -24,11 +26,23 @@ body {
 
 }
 
+@page {
+  margin: 0;
+  size: A4;
+}
+
 @media print {
-  @page {
-    margin: 0cm;
-    size: 210mm 297mm;
+  body {
+    background-color: var(--white);
   }
+  .page {
+  margin:0 !important;
+  width: 100% !important;  
+  }
+
+  /* header, main, footer {
+    border:solid 2px red;
+  } */
 }
 
 
@@ -83,6 +97,7 @@ p:not(:last-child) {
 ul {
   list-style-type: square;
   margin-left: 1rem;
+  margin-bottom:.5rem;
 }
 
 .column-layout {

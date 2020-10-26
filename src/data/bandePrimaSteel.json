@@ -1,16 +1,16 @@
 {
-    "title": "Bande PLY",
+    "title": "Bande STEEL",
     "breadcrumb": [
         "Convoyeurs à bande",
         "Bandes transporteuses",
-        "Bandes textiles"
+        "Bandes à câbles d’acier"
     ],
-    "shortDescription": "Bandes textiles EP ou PP pour conditions de service moyennes à sévères",
-    "productPicture": "produits/bandes/ply.png",
+    "shortDescription": "Bandes à câbles d’acier, type ST, pour les convoyeurs longs et les fortes tensions.",
+    "productPicture": "produits/bandes/steel.png",
     "provider": "PRIMA",
     "providerPicture": "provider/prima_white.png",
     "description": [
-        "Utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères."
+        "Bandes de construction type ST, adaptées aux convoyeurs de grands entre-axes et de fortes tensions pour lesquels les débits de transport sont très élevés. Elles sont principalement utilisées dans des environnements sévères où fiabilité et performance sont indispensables."
     ],
     "imageContent": "https://abm-tecna.com/wp-content/uploads/2020/05/bande.jpg",
     "areas": [
@@ -49,15 +49,10 @@
         ]
     ],
     "compositions": [
-        "2 à 6 plis de tissu EP",
-        "Une couche de gomme de calandrage",
-        "Une couche de gomme de revêtement"
-    ],
-    "compositionDesc": [
-        "Sur la face supérieure et inférieure, la couche de gomme de revêtement présente répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+        "Nombre de câbles chaîne, diamètres et distance entre chaque câble sont définis et conformes par rapport à la norme allemande DIN 22131"
     ],
     "avantages": [
-        "Résistances ruptures très élevées jusqu’à ST&nbsp;8000&nbsp;N/mm",
+        "Résistances ruptures très élevées jusqu’à ST&nbsp;8000&nbsp; N/mm",
         "Optimale pour les très longs convoyeurs grâce à un très faible allongement",
         "Durée de vie élevée",
         "Adaptée aux bandes à forts débits"

@@ -1,16 +1,16 @@
 {
-    "title": "Bande PLY",
+    "title": "Bande LIFT TEXTILE",
     "breadcrumb": [
         "Convoyeurs à bande",
         "Bandes transporteuses",
         "Bandes textiles"
     ],
-    "shortDescription": "Bandes textiles EP ou PP pour conditions de service moyennes à sévères",
-    "productPicture": "produits/bandes/ply.png",
+    "shortDescription": "Bandes élévatrices avec carcasse textile",
+    "productPicture": "produits/bandes/lift-textile.png",
     "provider": "PRIMA",
     "providerPicture": "provider/prima_white.png",
     "description": [
-        "Utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères."
+        "Développée spécialement pour répondre aux exigences techniques des élévateurs à godets de faibles à moyennes tensions."
     ],
     "imageContent": "https://abm-tecna.com/wp-content/uploads/2020/05/bande.jpg",
     "areas": [
@@ -49,18 +49,12 @@
         ]
     ],
     "compositions": [
-        "2 à 6 plis de tissu EP",
-        "Une couche de gomme de calandrage",
-        "Une couche de gomme de revêtement"
-    ],
-    "compositionDesc": [
-        "Sur la face supérieure et inférieure, la couche de gomme de revêtement présente répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+        "Une carcasse textile composée de plis de tissus renforcés assurant une excellente tenue et stabilité dans le temps grâce à un allongement maitrisé."
     ],
     "avantages": [
-        "Résistances ruptures très élevées jusqu’à ST&nbsp;8000&nbsp;N/mm",
-        "Optimale pour les très longs convoyeurs grâce à un très faible allongement",
-        "Durée de vie élevée",
-        "Adaptée aux bandes à forts débits"
+        "Adaptée aux convoyeurs de moindre débit",
+        "Adaptée aux petits diamètres de tambours",
+        "Revêtements optimisés et en accord avec les réglementations en vigueur (chaleurs, gras, etc.)"
     ],
     "stock": [
         {

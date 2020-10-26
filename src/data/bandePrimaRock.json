@@ -1,16 +1,16 @@
 {
-    "title": "Bande PLY",
+    "title": "Bande ROCK",
     "breadcrumb": [
         "Convoyeurs à bande",
         "Bandes transporteuses",
         "Bandes textiles"
     ],
-    "shortDescription": "Bandes textiles EP ou PP pour conditions de service moyennes à sévères",
-    "productPicture": "produits/bandes/ply.png",
+    "shortDescription": "Bandes textiles équipées d’un bouclier métallique résistant aux impacts et déchirures.",
+    "productPicture": "produits/bandes/rock.png",
     "provider": "PRIMA",
     "providerPicture": "provider/prima_white.png",
     "description": [
-        "Utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères."
+        "Les bandes PRIMA ROCK sont utilisées sur des convoyeurs qui opèrent dans des conditions de service difficiles. La nappe métallique de protection superposée à la carcasse textile, confère aux bandes PRIMA ROCK une excellente résistance aux coupures, déchirures et aux impacts répétitifs."
     ],
     "imageContent": "https://abm-tecna.com/wp-content/uploads/2020/05/bande.jpg",
     "areas": [
@@ -49,18 +49,13 @@
         ]
     ],
     "compositions": [
-        "2 à 6 plis de tissu EP",
-        "Une couche de gomme de calandrage",
-        "Une couche de gomme de revêtement"
-    ],
-    "compositionDesc": [
-        "Sur la face supérieure et inférieure, la couche de gomme de revêtement présente répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+        "Câbles d’acier en trame à la fois résistants et super-élastiques",
+        "Nappe de protection permet de conserver une parfaite mise-en-auge"
     ],
     "avantages": [
-        "Résistances ruptures très élevées jusqu’à ST&nbsp;8000&nbsp;N/mm",
-        "Optimale pour les très longs convoyeurs grâce à un très faible allongement",
-        "Durée de vie élevée",
-        "Adaptée aux bandes à forts débits"
+        "Meilleure répartition des contraintes lors des impacts",
+        "Protection de la carcasse contre les déchirures",
+        "Résistance exceptionnelle à l’agrafage"
     ],
     "stock": [
         {

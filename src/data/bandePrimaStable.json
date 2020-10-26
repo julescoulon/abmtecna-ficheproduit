@@ -1,16 +1,16 @@
 {
-    "title": "Bande PLY",
+    "title": "Bande STABLE",
     "breadcrumb": [
         "Convoyeurs à bande",
         "Bandes transporteuses",
         "Bandes textiles"
     ],
-    "shortDescription": "Bandes textiles EP ou PP pour conditions de service moyennes à sévères",
-    "productPicture": "produits/bandes/ply.png",
+    "shortDescription": "Bandes qui s’autocentrent dans le convoyeur.",
+    "productPicture": "produits/bandes/stable.png",
     "provider": "PRIMA",
     "providerPicture": "provider/prima_white.png",
     "description": [
-        "Utilisées pour le transport de matériaux en vrac dans toutes les industries extractives et de transformations, dans des conditions de service moyennes à sévères."
+        "Permettent de résoudre les problèmes d’alignement des bandes grâce à une carcasse unique qui crée un effet naturel d’auto-centrage. Utilisée particulièrement  sur les équipements mobiles et réversibles où les problèmes de déport sont fréquents. Elles bénéficient aussi d’une excellente stabilité dans les convoyeurs courbes."
     ],
     "imageContent": "https://abm-tecna.com/wp-content/uploads/2020/05/bande.jpg",
     "areas": [
@@ -49,18 +49,14 @@
         ]
     ],
     "compositions": [
-        "2 à 6 plis de tissu EP",
-        "Une couche de gomme de calandrage",
-        "Une couche de gomme de revêtement"
-    ],
-    "compositionDesc": [
-        "Sur la face supérieure et inférieure, la couche de gomme de revêtement présente répond aux différentes normes internationales en vigueur. Le choix du grade est adapté aux contraintes du convoyeur et des produits transportés."
+        "?"
     ],
     "avantages": [
-        "Résistances ruptures très élevées jusqu’à ST&nbsp;8000&nbsp;N/mm",
-        "Optimale pour les très longs convoyeurs grâce à un très faible allongement",
-        "Durée de vie élevée",
-        "Adaptée aux bandes à forts débits"
+        "Auto-centrage de la bande",
+        "Utilisation pour convoyeurs réversibles et mobiles",
+        "Diminue les pertes de matériel du au déport de la bande et les problèmes de détérioration des talons dûs au déport la bande",
+        "Utilisation possible avec angle d’auge jusque 90°",
+        "Utilisation pour des convoyeurs courbes"
     ],
     "stock": [
         {

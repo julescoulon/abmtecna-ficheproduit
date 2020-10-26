@@ -25,7 +25,6 @@
   }
 
   .imgCover {
-    margin-top: 1rem;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -61,16 +60,39 @@
         <p>{desc}</p>
       {/each}
       <h3>Composition</h3>
-      {#each data.compositions as composition}
-        <p>{composition}</p>
-      {/each}
+      <ul>
+        {#each data.compositions as composition}
+          <li>
+            <span>{composition}</span>
+          </li>
+        {/each}
+      </ul>
+      {#if data.compositionDesc}
+        {#each data.compositionDesc as compositionDesc}
+          <p>
+            {@html compositionDesc}
+          </p>
+        {/each}
+      {/if}
+      <h3>Avantages</h3>
+      <ul>
+        {#each data.avantages as avantage}
+          <li>
+            <span>
+              {@html avantage}
+            </span>
+          </li>
+        {/each}
+      </ul>
     </div>
 
     <div class="area stretch">
       <h3>Domaines d'applications</h3>
       <ul>
         {#each data.areas as area}
-          <li><span>{area}</span></li>
+          <li>
+            <span>{area}</span>
+          </li>
         {/each}
       </ul>
       <div

@@ -6,10 +6,14 @@
 
 <style>
   header {
-    padding: 2rem 4rem;
+    padding: 0 4rem;
     position: relative;
     z-index: 10;
     color: var(--white);
+    min-height: 11rem;
+
+    display: flex;
+    align-items: center;
   }
 
   .backgrounds,
@@ -58,9 +62,21 @@
     align-items: center;
   }
 
-  .picture {
+  .picture_wrapper {
+    position: relative;
+  }
+
+  .productPicture {
     width: 100%;
     filter: drop-shadow(0 0 0.5rem var(--white));
+  }
+
+  .providerPicture {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    filter: drop-shadow(0rem 0rem 0rem var(--white));
   }
 
   .shortDescription {
@@ -75,12 +91,33 @@
     font-size: 80%;
     font-style: italic;
   }
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+  }
+
+  .logo img {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 3rem;
+    box-shadow: 0 0.2rem 4px rgba(0, 0, 0, 0.25);
+  }
 </style>
 
 <header>
   <div class="backgrounds">
     <div class="image" />
     <div class="color" />
+  </div>
+  <div class="logo">
+    <img src="./assets/img/abmtecna_flammecolor.png" alt="Logo ABM TECNA" />
   </div>
   <!-- <div class="row company">
     <img
@@ -89,10 +126,16 @@
       alt={data.title} />
   </div> -->
   <div class="row product">
-    <img
-      class="picture"
-      src="./assets/img/{data.productPicture}"
-      alt={data.title} />
+    <div class="picture_wrapper">
+      <img
+        class="productPicture"
+        src="./assets/img/{data.productPicture}"
+        alt={data.title} />
+      <img
+        class="providerPicture"
+        src="./assets/img/{data.providerPicture}"
+        alt={data.provider} />
+    </div>
     <div class="intro">
       <Breadcrumb {data} />
 
