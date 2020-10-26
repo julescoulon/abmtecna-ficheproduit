@@ -62,9 +62,7 @@
       <h3>Composition</h3>
       <ul>
         {#each data.compositions as composition}
-          <li>
-            <span>{composition}</span>
-          </li>
+          <li><span>{composition}</span></li>
         {/each}
       </ul>
       {#if data.compositionDesc}
@@ -90,14 +88,12 @@
       <h3>Domaines d'applications</h3>
       <ul>
         {#each data.areas as area}
-          <li>
-            <span>{area}</span>
-          </li>
+          <li><span>{area}</span></li>
         {/each}
       </ul>
       <div
         class="imgCover"
-        style="background-image:url(https://abm-tecna.com/wp-content/uploads/2020/05/bande.jpg)" />
+        style="background-image:url(./assets/img/{data.imageContent})" />
     </div>
   </div>
   <div class="row">

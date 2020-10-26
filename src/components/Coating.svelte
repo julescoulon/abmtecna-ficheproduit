@@ -11,14 +11,15 @@
   }
 
   .icon-wrapper {
-    background-color: var(--darkblue);
-    color: var(--white);
+    color: var(--orange);
+    border: solid 1.5px var(--orange);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 2.25rem;
     width: 2.25rem;
     border-radius: 50%;
+    margin-right: 0.25rem;
   }
 </style>
 
