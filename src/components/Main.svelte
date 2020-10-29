@@ -6,18 +6,10 @@
   import Icon from "./Icon.svelte";
 
   export let data;
-
-  let li = document.querySelectorAll("li");
-  for (let i = 0; i < li.length; i++) {
-    console.log(li);
-  }
 </script>
 
 <style>
-  main {
-    padding: 2rem 4rem;
-    padding-bottom: 0;
-    flex-grow: 1;
+  #content {
     background: url("/assets/img/logoABMTECNAwhitebg.png");
     background-position: center;
     background-size: auto 75%;
@@ -25,19 +17,28 @@
   }
 
   .imgCover {
+    margin-top: 1rem;
     height: 100%;
     background-size: cover;
     background-position: center;
   }
 
   ul {
-    list-style-type: square;
-    margin-left: 1rem;
-    color: var(--orange);
+    list-style-type: none;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
   }
 
-  li span {
-    color: var(--black);
+  ul li::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+
+    color: var(--orange);
+    margin-right: 0.5rem;
+    display: inline-block;
+    transform: scale(0.65);
   }
 
   table {
@@ -51,9 +52,21 @@
   table td {
     padding-right: 0.5rem;
   }
+
+  h2,
+  h3 {
+    text-transform: uppercase;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    background: var(--orange);
+    width: 35%;
+    height: 2px;
+  }
 </style>
 
-<main>
+<div id="content">
   <div class="row column-layout two-columns">
     <div>
       {#each data.description as desc}
@@ -134,4 +147,4 @@
   <div class="row">
     <Coating {data} />
   </div>
-</main>
+</div>

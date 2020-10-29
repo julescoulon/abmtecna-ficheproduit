@@ -1,6 +1,6 @@
 <script>
   export let icon;
-  export let style = "Regular";
+  export let style = "Solid";
   //Styles : Solid, Regular, Light, DuoTone, Brands
 
   let iconStyle = "";

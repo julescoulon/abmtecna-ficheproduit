@@ -1,24 +1,4 @@
 <script context="module">
-  let opt = {
-    margin: 0,
-    filename: "product.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 5 },
-  };
-
-  export function viewPDF() {
-    html2pdf()
-      .from(document.getElementById("toPDF"))
-      .set(opt)
-      .output("dataurlstring")
-      .then(function (pdfAsString) {
-        document.getElementById("pdfViewer").src = pdfAsString;
-      });
-  }
-
-  export function downloadPDF() {
-    html2pdf().from(document.getElementById("toPDF")).set(opt).save();
-  }
 </script>
 
 <script>
@@ -30,6 +10,8 @@
   import * as bandePrimaRock from "./data/bandePrimaRock.json";
   import * as bandePrimaStable from "./data/bandePrimaStable.json";
   import * as bandePrimaSteel from "./data/bandePrimaSteel.json";
+  import { onMount } from "svelte";
+  import Icon from "./components/Icon.svelte";
   const products = [
     "bandePrimaPLY",
     "bandePrimaFlex",
@@ -39,16 +21,79 @@
     "bandePrimaSteel",
   ];
 
+  let toPDF, pdfViewer, opt;
+  onMount(() => {
+    toPDF = document.getElementById("toPDF");
+    pdfViewer = document.getElementById("pdfViewer");
+    opt = {
+      margin: 0,
+      filename: data.title + ".pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 8, dpi: 300, letterRendering: true },
+      // jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+  });
+
+  function viewPDF() {
+    html2pdf()
+      .then(() => (state = "loading"))
+      .set(opt)
+      .from(toPDF)
+      .toPdf()
+      .get("pdf")
+      .then(function (pdf) {
+        let numberOfPages = pdf.internal.getNumberOfPages();
+        pdf.deletePage(numberOfPages);
+      })
+      .output("dataurlstring")
+      .then(function (pdfAsString) {
+        pdfViewer.src = pdfAsString;
+        state = "done";
+      });
+  }
+
+  function downloadPDF() {
+    html2pdf()
+      .set(opt)
+      .from(toPDF)
+      .toPdf()
+      .get("pdf")
+      .then(function (pdf) {
+        pdf.deletePage(2);
+      })
+      .save();
+  }
+
   $: selected = products[0];
   $: data = eval(selected);
 
-  $: hidePreview = true;
+  let type = "catalogue";
+  $: type, console.log("Type : ", type);
+
+  let state = "";
+
+  $: state, console.log("State : ", state);
 </script>
 
 <style>
-  header {
+  header,
+  nav {
     color: white;
     padding: 1rem;
+  }
+
+  nav {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #303030;
+    z-index: 100;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
   }
 
   h2 {
@@ -61,9 +106,22 @@
 
   form {
     display: flex;
+    align-items: center;
   }
 
-  button,
+  .column {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    line-height: 1.5;
+  }
+
+  .state {
+    transform: scale(2);
+    margin: 0 auto;
+  }
+
+  a,
   select {
     color: inherit;
     background: none;
@@ -71,6 +129,11 @@
     font-size: inherit;
     padding: 0.5rem;
     margin-right: 1rem;
+  }
+
+  a:hover {
+    color: #303030;
+    background: white;
   }
 
   iframe {
@@ -82,28 +145,53 @@
     display: block;
     transition: 0.2s ease-in;
   }
+
+  #toPDF {
+    width: 210mm;
+    margin: 0 auto;
+  }
 </style>
 
 <header>
   <h1>Fiches produits ABM TECNA</h1>
-  <form on:submit|preventDefault>
-    <select bind:value={selected}>
-      {#each products as product}
-        <option value={product}>{product}</option>
-      {/each}
-    </select>
-    <button on:click={downloadPDF}>Download PDF</button>
-    <button on:click={viewPDF}>Preview PDF</button>
-    <!-- <button
-      on:click={() => (hidePreview = !hidePreview)}>{hidePreview ? 'Hide' : 'Show'}
-      Preview</button> -->
-  </form>
 </header>
-{#if hidePreview}
-  <h2>Preview HTML</h2>
-  <div id="toPDF">
-    <Page {data} />
-  </div>
-{/if}
-<h2>Preview PDF</h2>
+<nav>
+  <form on:submit|preventDefault>
+    <div class="column">
+      <label>
+        <input type="radio" bind:group={type} value="fiche" checked={true} />
+        Fiche produit
+      </label>
+      <label>
+        <input type="radio" bind:group={type} value="catalogue" />
+        Catalogue
+      </label>
+    </div>
+
+    {#if type == 'fiche'}
+      <select bind:value={selected}>
+        {#each products as product}
+          <option value={product}>{product}</option>
+        {/each}
+      </select>
+    {/if}
+    <div class="state">
+      {#if state == 'loading'}
+        <Icon icon={'spinner'} />
+      {:else if state == 'done'}
+        <Icon icon={'check'} />
+      {/if}
+    </div>
+
+    <div class="action">
+      <a href="./#" on:click={downloadPDF}>Download PDF</a>
+      <a href="./#preview" on:click={viewPDF}>Preview PDF</a>
+    </div>
+  </form>
+</nav>
+<h2>Preview HTML</h2>
+<div id="toPDF">
+  <Page {data} {type} />
+</div>
+<h2 id="preview">Preview PDF</h2>
 <iframe id="pdfViewer" title="" />

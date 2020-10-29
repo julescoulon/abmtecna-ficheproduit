@@ -29,30 +29,88 @@
     z-index: -1;
   }
 
-  .backgrounds .color {
+  /* .backgrounds .color {
     background: linear-gradient(
       90deg,
-      var(--darkblue) 35%,
-      var(--lightblue) 100%
+      var(--lightblue) 0%,
+      var(--darkblue) 75%
     );
-    opacity: 85%;
-  }
+  } */
 
   .backgrounds .image {
-    background: url("/assets/img/background.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .company {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 2rem;
-  }
-
-  .company img {
-    height: 100%;
+    background-image: radial-gradient(
+        circle at 67% 83%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 1%,
+        transparent 1%,
+        transparent 5%,
+        transparent 5%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 24% 80%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 27%,
+        transparent 27%,
+        transparent 63%,
+        transparent 63%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 23% 5%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 26%,
+        transparent 26%,
+        transparent 82%,
+        transparent 82%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 21% 11%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 35%,
+        transparent 35%,
+        transparent 45%,
+        transparent 45%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 10% 11%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 21%,
+        transparent 21%,
+        transparent 81%,
+        transparent 81%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 19% 61%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 20%,
+        transparent 20%,
+        transparent 61%,
+        transparent 61%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 13% 77%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 63%,
+        transparent 63%,
+        transparent 72%,
+        transparent 72%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 30% 93%,
+        hsla(317, 0%, 96%, 0.05) 0%,
+        hsla(317, 0%, 96%, 0.05) 33%,
+        transparent 33%,
+        transparent 82%,
+        transparent 82%,
+        transparent 100%
+      ),
+      linear-gradient(90deg, rgb(2, 125, 194), rgb(17, 23, 94));
   }
 
   .product {
@@ -68,7 +126,11 @@
 
   .productPicture {
     width: 100%;
-    filter: drop-shadow(0 0 0.5rem var(--white));
+    /* background: radial-gradient(
+      rgba(100%, 100%, 100%, 0.65) 0%,
+      transparent 65%
+    ); */
+    /* filter: drop-shadow(0 0 0.5rem var(--white)); */
   }
 
   .providerPicture {
@@ -76,7 +138,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    filter: drop-shadow(0rem 0rem 0rem var(--white));
+
+    /* filter: drop-shadow(0rem 0rem 0rem var(--white)); */
   }
 
   .shortDescription {
@@ -99,42 +162,55 @@
     right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     transform: translateY(50%);
   }
 
+  .logo div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
   .logo img {
-    background: white;
-    padding: 0.5rem;
-    border-radius: 50%;
-    width: 3rem;
-    box-shadow: 0 0.2rem 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    border: solid 1px white;
+    margin-top: 0.25rem;
+    padding: 0.25rem;
+    /* border-radius: 50%; */
+    width: 12rem;
+    /* box-shadow: 0 0.2rem 4px rgba(0, 0, 0, 0.25); */
+  }
+
+  .logo svg {
   }
 </style>
 
 <header>
   <div class="backgrounds">
-    <div class="image" />
     <div class="color" />
+
+    <div class="image" />
   </div>
   <div class="logo">
-    <img src="./assets/img/abmtecna_flammecolor.png" alt="Logo ABM TECNA" />
+    <div>
+      <img src="./assets/img/logoABMTECNA.png" alt="Logo ABM TECNA" />
+      <svg width="300" height="50">
+        <path d="M 0 25 L 50 0 L 250 0 L 300 25 L 0 25 " fill="white" />
+      </svg>
+    </div>
   </div>
-  <!-- <div class="row company">
-    <img
-      class="picture"
-      src="./assets/img/logoABMTECNAwhite.png"
-      alt={data.title} />
-  </div> -->
+
   <div class="row product">
     <div class="picture_wrapper">
       <img
         class="productPicture"
         src="./assets/img/{data.productPicture}"
         alt={data.title} />
-      <img
+      <!-- <img
         class="providerPicture"
         src="./assets/img/{data.providerPicture}"
-        alt={data.provider} />
+        alt={data.provider} /> -->
     </div>
     <div class="intro">
       <Breadcrumb {data} />

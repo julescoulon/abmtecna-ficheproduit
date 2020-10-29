@@ -2,26 +2,41 @@
   import Header from "./Header.svelte";
   import Main from "./Main.svelte";
   import Footer from "./Footer.svelte";
-
-  import Coating from "./Coating.svelte";
+  import Couverture from "./Couverture.svelte";
 
   export let data;
+  export let type;
 </script>
 
 <style>
   .page {
     background: white;
-    margin: 0 auto;
-    width: 210mm;
     height: 297mm;
-    display: flex;
-    flex-direction: column;
+
+    /* display: flex;
+    flex-direction: column; */
     position: relative;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 0 4rem;
+    padding-top: 2.5rem;
   }
 </style>
 
-<div class="page">
-  <Header {data} />
-  <Main {data} />
-  <Footer />
-</div>
+<!-- Catalogue -->
+
+{#if type == 'fiche'}
+  <div class="page">
+    <Header {data} />
+    <main>
+      <Main {data} />
+    </main>
+    <Footer />
+  </div>
+{:else if type == 'catalogue'}
+  <div class="page">
+    <Couverture />
+  </div>
+{/if}
