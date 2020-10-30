@@ -97,6 +97,10 @@
     li > span {
         margin-left: 0.25rem;
     }
+
+    .contact {
+        display: grid;
+    }
 </style>
 
 <div class="background">
@@ -108,6 +112,7 @@
                     <h1>Contact</h1>
                     <div>
                         <h2>Fleurus</h2>
+                        <div />
                         <ul>
                             <li>
                                 <Icon icon={'map-marker-alt'} />
