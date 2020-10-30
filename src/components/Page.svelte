@@ -3,6 +3,7 @@
   import Main from "./Main.svelte";
   import Footer from "./Footer.svelte";
   import Couverture from "./Couverture.svelte";
+  import CouvertureArriere from "./CouvertureArriere.svelte";
 
   export let data;
   export let type;
@@ -38,5 +39,8 @@
 {:else if type == 'catalogue'}
   <div class="page">
     <Couverture />
+  </div>
+  <div class="page">
+    <CouvertureArriere />
   </div>
 {/if}

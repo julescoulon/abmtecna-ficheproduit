@@ -80,6 +80,7 @@
   nav {
     color: white;
     padding: 1rem;
+    z-index: 999;
   }
 
   nav {
@@ -88,7 +89,6 @@
     right: 0;
     top: 0;
     background: #303030;
-    z-index: 100;
   }
 
   h1,
