@@ -1,9 +1,7 @@
 <script>
-  import Breadcrumb from "./Breadcrumb.svelte";
-
   import Coating from "./Coating.svelte";
   import Stock from "./Stock.svelte";
-  import Icon from "./Icon.svelte";
+  import Icon from "./../Icon.svelte";
 
   export let data;
 </script>

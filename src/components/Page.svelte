@@ -1,9 +1,9 @@
 <script>
-  import Header from "./Header.svelte";
-  import Main from "./Main.svelte";
-  import Footer from "./Footer.svelte";
-  import Couverture from "./Couverture.svelte";
-  import CouvertureArriere from "./CouvertureArriere.svelte";
+  import Header from "./fiches/Header.svelte";
+  import Main from "./fiches/Main.svelte";
+  import Footer from "./fiches/Footer.svelte";
+  import Couverture from "./catalogue/Couverture.svelte";
+  import CouvertureArriere from "./catalogue/CouvertureArriere.svelte";
 
   export let data;
   export let type;
@@ -39,6 +39,13 @@
 {:else if type == 'catalogue'}
   <div class="page">
     <Couverture />
+  </div>
+  <div class="page">
+    <Header {data} />
+    <main>
+      <Main {data} />
+    </main>
+    <Footer />
   </div>
   <div class="page">
     <CouvertureArriere />

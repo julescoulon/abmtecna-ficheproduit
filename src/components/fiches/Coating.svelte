@@ -1,6 +1,6 @@
 <script>
   export let data;
-  import Icon from "./Icon.svelte";
+  import Icon from "../Icon.svelte";
 </script>
 
 <style>

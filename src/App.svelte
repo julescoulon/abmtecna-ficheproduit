@@ -29,8 +29,8 @@
       margin: 0,
       filename: data.title + ".pdf",
       image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 8, dpi: 300, letterRendering: true },
-      // jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+      html2canvas: { scale: 4, dpi: 300, letterRendering: true },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
     };
   });
 
@@ -52,22 +52,10 @@
       });
   }
 
-  function downloadPDF() {
-    html2pdf()
-      .set(opt)
-      .from(toPDF)
-      .toPdf()
-      .get("pdf")
-      .then(function (pdf) {
-        pdf.deletePage(2);
-      })
-      .save();
-  }
-
   $: selected = products[0];
   $: data = eval(selected);
 
-  let type = "catalogue";
+  let type = "fiche";
   $: type, console.log("Type : ", type);
 
   let state = "";
@@ -184,8 +172,7 @@
     </div>
 
     <div class="action">
-      <a href="./#" on:click={downloadPDF}>Download PDF</a>
-      <a href="./#preview" on:click={viewPDF}>Preview PDF</a>
+      <a href="./#preview" on:click={viewPDF}>Generate PDF</a>
     </div>
   </form>
 </nav>

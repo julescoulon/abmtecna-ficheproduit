@@ -14,6 +14,7 @@ export default {
     format: 'iife',
     name: 'app',
     file: 'public/bundle.js',
+    inlineDynamicImports: true,
   },
   plugins: [
     json({

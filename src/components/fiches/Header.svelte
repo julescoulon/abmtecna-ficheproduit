@@ -1,6 +1,5 @@
 <script>
   import Breadcrumb from "./Breadcrumb.svelte";
-  import Icon from "./Icon.svelte";
   export let data;
 </script>
 

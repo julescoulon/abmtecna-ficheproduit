@@ -1,5 +1,5 @@
 <script>
-    import Bande from "./illustrations/Bande.svelte";
+    import Bande from "../illustrations/Bande.svelte";
 </script>
 
 <style>
